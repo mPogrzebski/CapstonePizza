@@ -19,12 +19,15 @@ h1 {
     text-align: center;
     display: block;
     margin: 0 auto;
+    padding: 20px;
     background: white;
-    font-size: 2em;
+    font-size: 4em;
 }
 
 
 ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,9 +45,15 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+.content {
+    margin: 20px auto;
+    height: 70vh;
+    
 }
