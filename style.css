@@ -25,18 +25,16 @@ h1 {
 }
 
 h2 {
+    font-size: 2em;
+}
+
+h2, h3 {
     text-align: center;
     display: block;
     margin: 0 auto;
     padding: 20px;
     background: white;
-    font-size: 2em;
-}
-
-h3 {
-    display: block;
-    margin: 0 auto;
-    padding: 20px 0;
+ 
 }
 
 p {
@@ -103,3 +101,4 @@ p {
     padding: 14px 16px;
     text-decoration: none;
 }
+
