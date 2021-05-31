@@ -1,6 +1,7 @@
 :root {
     font-size: calc(1vw + 1vh + .5vmin);
 }
+
 *,
 *::before,
 *::after {
@@ -10,7 +11,7 @@
 }
 
 
-.bg{
+.bg {
     position: relative;
 }
 
@@ -46,9 +47,9 @@ h1 {
     display: block;
     margin: 0 auto;
     padding: 20px;
-    /* background: white; */
+
     font-size: 2rem;
-    /* font-size: 6vh; */
+
 }
 
 h2 {
@@ -61,7 +62,7 @@ h3 {
     display: block;
     margin: 0 auto;
     padding: 20px;
-    
+
 
 }
 
@@ -72,9 +73,13 @@ p {
 
 }
 
-ul {
+.navbar > ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -82,12 +87,13 @@ ul {
     background-color: green;
 }
 
-li {
-    float: left;
+.navbar ul li {
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
-li a {
-    display: block;
+.navbar li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -95,7 +101,7 @@ li a {
     font-size: 0.75rem;
 }
 
-li a:hover {
+.navbar li a:hover {
     background-color: red;
 }
 
