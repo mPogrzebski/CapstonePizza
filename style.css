@@ -21,21 +21,20 @@ html {
     position: relative;
 }
 
-.bg::before {
+.bg::before  {
     content: ' ';
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 200%;
+    height: 600%;
     opacity: 0.2;
     background-image: url('images/bg-image.jpg');
     background-position: 0 0;
     /* background-size:contain: ;  for mobile */
     background-size: cover;
-    background-repeat: no-repeat;
-
+    background-repeat: repeat-y;
 }
 
 
@@ -151,7 +150,6 @@ p {
 }
 
 
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -166,6 +164,14 @@ p {
     padding: 10px 0;
 }
 
+
+
+
+.menu_breaker {
+    border-top: 3px solid green;
+    margin-right: 20px 0;
+}
+
 .item_description {
     display: flex;
     flex-direction: column;
@@ -178,10 +184,6 @@ p {
     height: auto;
 }
 
-hr {
-    width: 60%;
-    margin: auto;
-}
 
 .price {
     font-size: 1.2rem;
