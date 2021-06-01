@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root {
     font-size: calc(1vw + 1vh + .5vmin);
 }
@@ -8,6 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato',
+    sans-serif;
 }
 
 .bg {
@@ -141,4 +148,41 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza { 
+    display: flex;
+    float:left;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.item_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.img_menu {
+    width: auto;
+    height: auto;
+}
+
+hr {
+    width: 60%;
+    margin: auto;
+}
+
+.price {
+    font-size: 1.2rem;
 }
