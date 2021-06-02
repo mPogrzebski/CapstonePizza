@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-transform:uppercase;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    font-family: 'arial';
+
+}
+header{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+
+}
+Header nav{
+    display:flex;
+    flex:1 1 600px;
+    justify-content: flex-end;
+    margin-right: 40px;
+    align-items: center;
+}
+header nav a{
+    padding:10px 20px;
+    text-decoration:none;
+    color:white;
+
+
+}
+
+header.logo{
+    width:150px;
+    height:150px;
+    flex: 0 1 150px;
+    margin-left: 40px;
+    
+}
+header.logo img{
+    height: inherit;
+    width: inherit;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex:1; 
+    align-items: center;
+    justify-content: center;
+}
+.main h1{
+    font-size:4em; /*1em= 16px */
+    color:white;
+    padding-bottom: 50px;
+}
+.main h3{
+    font-size: 3em;
+    color: yellow;
+    padding-bottom: 38px;
+    font-weight: 400px;
+}
+
+.main p{
+    color:white;
+    font-weight: 100;
+}
+.button{
+    width: 250px;
+    padding: 20px 15px;
+    border:2px solid green;
+    border: radius 5px;
+    margin-top: 40px;
+    color: yellow;
+    text-decoration: none;
+
+}
+.button:hover{
+    background-color: tomato;
+    border-color:tomato;
+    transform:rotate(5deg);
+    transition: all 2s ease-in-out;
+
+}

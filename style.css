@@ -14,14 +14,14 @@
 
 html {
     font-family: 'Lato',
-    sans-serif;
+        sans-serif;
 }
 
 .bg {
     position: relative;
 }
 
-.bg::before  {
+.bg::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -39,6 +39,7 @@ html {
 
 
 .wrapper {
+
     position: relative;
     margin: auto;
     width: 50%;
@@ -52,13 +53,12 @@ h1 {
     display: block;
     margin: 0 auto;
     padding: 20px;
-
     font-size: 2rem;
 
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 h2,
@@ -82,6 +82,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar ul {
@@ -107,11 +108,14 @@ p {
 }
 
 .navbar li a:hover {
-    background-color: red;
+    background-color: tomato;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     margin: 20px auto;
+    align-items: center;
 
 }
 
@@ -147,6 +151,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 
@@ -155,13 +160,17 @@ p {
     flex-direction: column;
 }
 
-.pizza { 
+.pizza {
     display: flex;
-    float:left;
+    float: left;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
     padding: 10px 0;
+}
+
+.pizza_name {
+    font-size: 1.2rem;
 }
 
 
@@ -187,4 +196,44 @@ p {
 
 .price {
     font-size: 1.2rem;
+}
+
+.team {
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.profile>img {
+    height: 150px;
+    width: auto;
+}
+
+.button {
+    background-color: green;
+    width: 250px;
+    padding: 20px 15px;
+    border: 2px solid green;
+    border: radius 5px;
+    margin-top: 40px;
+    color: yellow;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: tomato;
+    border-color: tomato;
+    transform: rotate(5deg);
+    transition: all 2s ease-in-out;
+
 }
